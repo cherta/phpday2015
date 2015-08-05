@@ -7,7 +7,7 @@ browserify.settings({
   transform: ['brfs', 'babelify']
 });
 
-app.set('port', (process.env.PORT || 5000));
+app.set('port', (process.env.PORT || 3000));
 
 app.use('/app.js', browserify('client/scripts/main.js'));
 
