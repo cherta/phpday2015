@@ -14,8 +14,8 @@ module.exports = [
     "imageUrl": "/images/talks/sms.jpg",
     "date": "11:00",
     "people": [
-      { "name": "Marcelo Bagnasco", "twitter": "marcelobagnasco", imageUrl: "http://www.gravatar.com/avatar/f8305912618d74d502ab5c77d29bf1c5?s=200" },
-      { "name": "Iván Baldo", "twitter": "ivanbaldo", imageUrl: "http://www.gravatar.com/avatar/2327e3dac64d91af3fb8def6ace0f18f?s=200" }
+      { "name": "Marcelo Bagnasco", "twitter": "marcelobagnasco", imageUrl: "https://gravatar.com/avatar/f8305912618d74d502ab5c77d29bf1c5?s=200" },
+      { "name": "Iván Baldo", "twitter": "ivanbaldo", imageUrl: "https://gravatar.com/avatar/2327e3dac64d91af3fb8def6ace0f18f?s=200" }
     ]
   },
 ]

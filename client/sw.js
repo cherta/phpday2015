@@ -34,7 +34,7 @@ self.addEventListener('install', function (event) {
 
 self.addEventListener('fetch', function(event) {
   var requestURL = new URL(event.request.url);
-  if(requestURL.hostname == 'www.gravatar.com') {
+  if(requestURL.hostname == 'gravatar.com') {
     event.respondWith(imageURL(event.request));
   } else {
     event.respondWith(
