@@ -25,9 +25,7 @@
     "material-design-lite": "^1.0.0-3",
     "page": "^1.6.3",
     "reqwest": "^1.1.6",
-    "watchify": "^3.2.3"
-  },
-  "devDependencies": {
+    "watchify": "^3.2.3",
     "babelify": "^6.1.3"
   }
 }
