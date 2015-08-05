@@ -64,9 +64,8 @@ function talkDOM (talk) {
     return person.name;
   });
   var twitterHandles = talk.people.map(function (person) {
-    return person.twitter;
+    return '@' + person.twitter;
   }).join(' & ');
-  talk.title = `${talk.name} by ${personNames.join(' & ')}`;
   talk.twitterHandles = twitterHandles;
   return templates.talk(talk);
 }

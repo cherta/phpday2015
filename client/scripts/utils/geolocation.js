@@ -54,7 +54,7 @@ function load (mapNode) {
   var mapNode = mapNode || document.getElementById('map');
   mapNode.style.height = document.body.clientHeight + 'px';
 
-  let options = { zoom: 17/*, center: new google.maps.LatLng(-34.8993774, -56.1320043)*/ };
+  let options = { zoom: 17, streetViewControl: false, mapTypeControl: false, zoomControl: false };
   let map = new google.maps.Map(mapNode, options);
 
   navigator.geolocation.getCurrentPosition(function center (position) {

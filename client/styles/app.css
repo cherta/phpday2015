@@ -1,5 +1,9 @@
 #map { width: 100%; margin: 0; padding: 0;}
 
+header .mdl-button--icon {
+  margin: 4px;
+}
+
 .spinner-container {
   text-align: center;
   margin-top: 20px;
@@ -9,14 +13,29 @@
   padding-left: 0;
 }
 
-.mdl-layout__header-row .mdl-button {
-  margin: 0 20px;
+.mdl-layout__header-row .mdl-button--icon {
+  width: 48px;
+  height: 48px;
+}
+
+.mdl-card__supporting-text {
+  font-size: 15px;
+}
+
+.mdl-card__title-list li a {
+  font-size: 15px;
 }
 
 .talk-card-wide.mdl-card {
-  width: 99%;
-  margin: 1% auto;
+  width: 95%;
+  margin: 2% auto;
 }
+
+.single-talk.talk-card-wide.mdl-card {
+  width: 100%;
+  margin: 0 auto;
+}
+
 .talk-card-wide > .mdl-card__title {
   height: 176px;
 }
@@ -35,12 +54,4 @@
 .mdl-card__title-list li {
   display: inline;
   font-size: 24px;
-}
-
-.mdl-card__title-list li:after {
-  content: " & ";
-}
-
-.mdl-card__title-list li:last-child:after {
-  content: "";
 }

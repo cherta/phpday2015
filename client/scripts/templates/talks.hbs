@@ -1,9 +1,12 @@
 {{#extend "layout"}}
   {{#content "drawer"}}
     <div class="mdl-layout__drawer">
-      <span class="mdl-layout-title">PHPDay 2015</span>
+      <span class="mdl-layout-title">Menu</span>
       <nav class="mdl-navigation">
-        <a class="mdl-navigation__link" href="/location">Location</a>
+        <a class="mdl-navigation__link" href="/location">
+          <i class="material-icons">map</i>
+          <span>Location</span>
+        </a>
       </nav>
     </div>
   {{/content}}
@@ -12,13 +15,8 @@
     {{#each talks}}
       <div class='mdl-card mdl-shadow--2dp talk-card-wide'>
           <div class="mdl-card__title" style="background: url('{{imageUrl}}') center / cover">
-            <h2 class="mdl-card__title-text mdl-color-text--grey-600">
-              {{name}} by&nbsp;
-              <ul class="mdl-card__title-list">
-                {{#each people}}
-                  <li><a href="https://twitter.com/{{twitter}}" target="_blank">{{name}}</a></li>
-                {{/each}}
-              </ul>
+            <h2 class="mdl-card__title-text">
+              {{name}}
             </h2>
           </div>
           <div class="mdl-card__supporting-text">
@@ -30,6 +28,10 @@
             </a>
           </div>
           <div class="mdl-card__menu mdl-color-text--grey-600">
+            {{#each people}}
+              <a class="mdl-button mdl-button--icon" href="twitter://user?screen_name={{twitter}}" style="background: url('{{imageUrl}}') center / cover">
+              </a>
+            {{/each}}
             <button class="mdl-button" disabled>
               {{date}}
             </button>

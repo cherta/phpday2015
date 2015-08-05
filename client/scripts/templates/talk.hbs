@@ -5,33 +5,33 @@
     </a>
   {{/content}}
   {{#content "header-title"}}
-    <span class="mdl-layout-title">{{title}}</span>
+    <span class="mdl-layout-title">Talk</span>
+  {{/content}}
+  {{#content "header-links"}}
+    <div class="mdl-layout-spacer"></div>
+    <a href="twitter://post?message=Estoy viendo la charla de {{twitterHandles}} en el @phpdayuy." class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+      <i class="material-icons">share</i>
+    </a>
   {{/content}}
   {{#content "main"}}
-    <main className="mdl-layout__content">
-      <div class='mdl-card mdl-shadow--2dp talk-card-wide'>
-        <div class="mdl-card__title" style="background: url('{{imageUrl}}') center / cover">
-          <h2 class="mdl-card__title-text mdl-color-text--grey-600">
-            {{name}} by&nbsp;
-            <ul class="mdl-card__title-list">
-              {{#each people}}
-                <li><a href="https://twitter.com/{{twitter}}" target="_blank">{{name}}</a></li>
-              {{/each}}
-            </ul>
-          </h2>
-        </div>
-        <div class="mdl-card__supporting-text">
-          {{description}}
-        </div>
-        <div class="mdl-card__menu mdl-color-text--grey-600">
-          <button class="mdl-button" disabled>
-            {{date}}
-          </button>
-          <a href="twitter://post?message=Estoy viendo la charla de {{twitterHandles}} en el @phpdayuy." class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-            <i class="material-icons">share</i>
-          </a>
-        </div>
+    <div class='single-talk mdl-card talk-card-wide'>
+      <div class="mdl-card__title" style="background: url('{{imageUrl}}') center / cover;">
+        <h2 class="mdl-card__title-text">
+          {{name}}
+        </h2>
       </div>
-    </main>
+      <div class="mdl-card__supporting-text">
+        {{description}}
+      </div>
+      <div class="mdl-card__menu">
+        {{#each people}}
+          <a class="mdl-button mdl-button--icon" href="twitter://user?screen_name={{twitter}}" style="background: url('{{imageUrl}}') center / cover">
+          </a>
+        {{/each}}
+        <button class="mdl-button" disabled>
+          {{date}}
+        </button>
+      </div>
+    </div>
   {{/content}}
 {{/extend}}

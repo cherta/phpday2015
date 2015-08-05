@@ -5,7 +5,7 @@ module.exports = [
     "imageUrl": "http://d3js.org/preview.png",
     "date": "10:00",
     "people": [
-      { "name": "Miguel Trias", "twitter": "@mgltrs" }
+      { "name": "Miguel Trias", "twitter": "mgltrs", imageUrl: "https://gravatar.com/avatar/f265c1d7919de602ef5914a431834b41?s=220" }
     ]
   },
   { "id": 2,
@@ -14,8 +14,8 @@ module.exports = [
     "imageUrl": "https://www.contactalos.com/blog/wp-content/uploads/2015/06/Mensajes-de-texto.jpg",
     "date": "11:00",
     "people": [
-      { "name": "Marcelo Bagnasco", "twitter": "@marcelobagnasco" },
-      { "name": "Iván Baldo", "twitter": "@ivanbaldo" }
+      { "name": "Marcelo Bagnasco", "twitter": "marcelobagnasco", imageUrl: "http://www.gravatar.com/avatar/f8305912618d74d502ab5c77d29bf1c5?s=200" },
+      { "name": "Iván Baldo", "twitter": "ivanbaldo", imageUrl: "http://www.gravatar.com/avatar/2327e3dac64d91af3fb8def6ace0f18f?s=200" }
     ]
   },
 ]
