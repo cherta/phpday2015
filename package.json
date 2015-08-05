@@ -1,0 +1,33 @@
+{
+  "name": "php-day-2015",
+  "version": "1.0.0",
+  "description": "A php day web app agenda",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/index.js"
+  },
+  "keywords": [
+    "serviceworker",
+    "offline",
+    "material",
+    "agenda",
+    "php"
+  ],
+  "author": "Gabriel Chertok <gchertok@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "brfs": "^1.4.0",
+    "browserify": "^10.2.4",
+    "browserify-middleware": "^6.0.0",
+    "express": "^4.13.1",
+    "handlebars": "^3.0.3",
+    "handlebars-layouts": "^3.1.0",
+    "material-design-lite": "^1.0.0-3",
+    "page": "^1.6.3",
+    "reqwest": "^1.1.6",
+    "watchify": "^3.2.3"
+  },
+  "devDependencies": {
+    "babelify": "^6.1.3"
+  }
+}

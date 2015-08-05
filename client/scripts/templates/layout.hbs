@@ -1,0 +1,25 @@
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+      {{#block "header-top-left-button"}}
+        <a class="mdl-button mdl-button--icon" href="/">
+          <i class="material-icons">menu</i>
+        </a>
+      {{/block}}
+      {{#block "header-title"}}
+        <span class="mdl-layout-title">PHPDay 2015 Agenda</span>
+      {{/block}}
+      {{#block "header-links"}}
+      {{/block}}
+    </div>
+  </header>
+  {{#block "drawer"}}
+  {{/block}}
+  <main class="mdl-layout__content">
+    <div class="page-content">
+      {{#block "main"}}
+        Main Content
+      {{/block}}
+    </div>
+  </main>
+</div>

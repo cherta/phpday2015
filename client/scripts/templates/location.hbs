@@ -1,0 +1,19 @@
+{{#extend "layout"}}
+  {{#content "header-top-left-button"}}
+    <a class="mdl-button mdl-button--icon" href="/">
+      <i class="material-icons">arrow_back</i>
+    </a>
+  {{/content}}
+  {{#content "header-title"}}
+    <span class="mdl-layout-title">Location</span>
+  {{/content}}
+  {{#content "header-links"}}
+    <div class="mdl-layout-spacer"></div>
+    <a href="/location/directions">
+      <i class="material-icons">directions</i>
+    </a>
+  {{/content}}
+  {{#content "main"}}
+    <div id="map"></div>
+  {{/content}}
+{{/extend}}

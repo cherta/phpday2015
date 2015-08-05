@@ -1,0 +1,41 @@
+{{#extend "layout"}}
+  {{#content "drawer"}}
+    <div class="mdl-layout__drawer">
+      <span class="mdl-layout-title">PHPDay 2015</span>
+      <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" href="/location">Location</a>
+      </nav>
+    </div>
+  {{/content}}
+  {{#content "main"}}
+  <main className="mdl-layout__content">
+    {{#each talks}}
+      <div class='mdl-card mdl-shadow--2dp talk-card-wide'>
+          <div class="mdl-card__title" style="background: url('{{imageUrl}}') center / cover">
+            <h2 class="mdl-card__title-text mdl-color-text--grey-600">
+              {{name}} by&nbsp;
+              <ul class="mdl-card__title-list">
+                {{#each people}}
+                  <li><a href="https://twitter.com/{{twitter}}" target="_blank">{{name}}</a></li>
+                {{/each}}
+              </ul>
+            </h2>
+          </div>
+          <div class="mdl-card__supporting-text">
+            {{description}}
+          </div>
+          <div class="mdl-card__actions mdl-card--border">
+            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="/talks/{{id}}">
+              View More
+            </a>
+          </div>
+          <div class="mdl-card__menu mdl-color-text--grey-600">
+            <button class="mdl-button" disabled>
+              {{date}}
+            </button>
+          </div>
+        </div>
+      {{/each}}
+    </main>
+  {{/content}}
+{{/extend}}
