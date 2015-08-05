@@ -11,3 +11,5 @@
 ** Comportamiento de app ([no resize](http://stackoverflow.com/a/11689448), no navigation bar)
 ** HTML5 goodies (íconos, etc)
 ** Homescreen (https://developer.chrome.com/multidevice/android/installtohomescreen) y (https://developer.apple.com/library/ios/documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html)
+*Feel
+** [OpenUrl](http://handleopenurl.com/)
