@@ -69,3 +69,19 @@ function talkDOM (talk) {
   talk.twitterHandles = twitterHandles;
   return templates.talk(talk);
 }
+
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/sw.js').then(function(registration) {
+    // Registration was successful
+    if(registration.installing) {
+      console.log('Service worker installing');
+    } else if(registration.waiting) {
+      console.log('Service worker installed');
+    } else if(registration.active) {
+      console.log('Service worker active');
+    }
+  }).catch(function(err) {
+    // registration failed :(
+    console.log('ServiceWorker registration failed: ', err);
+  });
+}
