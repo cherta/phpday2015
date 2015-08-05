@@ -52,6 +52,7 @@ function showDirections (map) {
 function load (mapNode) {
   if(!navigator.geolocation) { return null; }
   var mapNode = mapNode || document.getElementById('map');
+  mapNode.style.height = document.body.clientHeight + 'px';
 
   let options = { zoom: 17/*, center: new google.maps.LatLng(-34.8993774, -56.1320043)*/ };
   let map = new google.maps.Map(mapNode, options);
