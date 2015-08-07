@@ -10,12 +10,12 @@ page.base('');
 
 page('/', stopTrackingPosition, function talks () {
   draw(loadingDOM())
-  talkFunctions.talks().then(talksDOM).then(draw);
+  talkFunctions.talks().then(talksDOM).then(draw).fail(errorPage);
 });
 
 page('/talks/:id', stopTrackingPosition, function talk (ctx) {
   draw(loadingDOM())
-  talkFunctions.talk(ctx.params.id).then(talkDOM).then(draw);
+  talkFunctions.talk(ctx.params.id).then(talkDOM).then(draw).fail(errorPage);
 });
 
 page('/location', stopTrackingPosition, function location () {
@@ -68,6 +68,10 @@ function talkDOM (talk) {
   }).join(' & ');
   talk.twitterHandles = twitterHandles;
   return templates.talk(talk);
+}
+
+function errorPage () {
+  draw(templates.error());
 }
 
 if ('serviceWorker' in navigator) {
