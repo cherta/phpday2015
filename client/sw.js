@@ -1,6 +1,6 @@
 importScripts('scripts/serviceworker-cache-polyfill.js');
 
-var VERSION = "1";
+var VERSION = "2";
 
 var ASSETS_CACHE = 'php-day-2015-agenda';
 var GRAVATAR_CACHE = 'php-day-2015-agenda-gravatar';
