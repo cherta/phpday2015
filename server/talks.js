@@ -24,7 +24,7 @@ module.exports = [
     "imageUrl": "/images/talks/agents.png",
     "date": "12:00",
     "people": [
-      { "name": "Sandino Núñez Acuña", "twitter": "sandinosaso", imageUrl: "http://www.gravatar.com/avatar/aefb6fd22378f4c2896f20e4f3a16eba?s=220" }
+      { "name": "Sandino Núñez Acuña", "twitter": "sandinosaso", imageUrl: "https://www.gravatar.com/avatar/aefb6fd22378f4c2896f20e4f3a16eba?s=220" }
     ]
   },
   { "id": 4,
@@ -33,7 +33,7 @@ module.exports = [
     "imageUrl": "/images/talks/react.png",
     "date": "14:00",
     "people": [
-      { "name": "José Capelán", "twitter": "codesk4ter", imageUrl: "http://www.gravatar.com/avatar/150e23cd8adbfefda6dd277e82309bc7?s=220" }
+      { "name": "José Capelán", "twitter": "codesk4ter", imageUrl: "https://www.gravatar.com/avatar/150e23cd8adbfefda6dd277e82309bc7?s=220" }
     ]
   },
   { "id": 5,
@@ -42,7 +42,7 @@ module.exports = [
     "imageUrl": "/images/talks/redes.jpeg",
     "date": "15:00",
     "people": [
-      { "name": "Federico Wagner", "twitter": "visigoten", imageUrl: "http://www.gravatar.com/avatar/c8246c6ea4d67f96faa33ee78da3d1c2?s=200" }
+      { "name": "Federico Wagner", "twitter": "visigoten", imageUrl: "https://www.gravatar.com/avatar/c8246c6ea4d67f96faa33ee78da3d1c2?s=200" }
     ]
   },
   { "id": 6,
@@ -51,7 +51,7 @@ module.exports = [
     "imageUrl": "/images/talks/unicorn.jpg",
     "date": "16:00",
     "people": [
-      { "name": "Gabriel Chertok", "twitter": "iamcherta", imageUrl: "http://www.gravatar.com/avatar/97edcbbbe72267ad00955bb0407f42dc?s=220" }
+      { "name": "Gabriel Chertok", "twitter": "iamcherta", imageUrl: "https://www.gravatar.com/avatar/97edcbbbe72267ad00955bb0407f42dc?s=220" }
     ]
   }
 ]
