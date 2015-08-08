@@ -1,5 +1,7 @@
 importScripts('scripts/serviceworker-cache-polyfill.js');
 
+var VERSION = "1";
+
 var ASSETS_CACHE = 'php-day-2015-agenda';
 var GRAVATAR_CACHE = 'php-day-2015-agenda-gravatar';
 var TALKS_CACHE = 'php-day-2105-agenda-talks';
@@ -14,6 +16,10 @@ var urlsToCache = [
   '/images/icons/ms-touch-icon-144x144-precomposed.png',
   'images/talks/d3.png',
   'images/talks/sms.jpg',
+  'images/talks/agents.png',
+  'images/talks/react.png',
+  'images/talks/redes.jpeg',
+  'images/talks/unicorn.jpg',
   'https://fonts.googleapis.com/icon?family=Material+Icons',
   'https://fonts.gstatic.com/s/materialicons/v7/2fcrYFNaTjcS6g4U3t-Y5UEw0lE80llgEseQY3FEmqw.woff2',
   'https://fonts.gstatic.com/s/materialicons/v7/2fcrYFNaTjcS6g4U3t-Y5UEw0lE80llgEseQY3FEmqw.woff2',
